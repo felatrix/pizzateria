@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
         interval:4000
     });
 
+    var MBox = document.querySelectorAll('.materialboxed');
+    var init_mbox = M.Materialbox.init(MBox);
+
     var parallax = document.querySelectorAll('.parallax');
-    var instances = M.Parallax.init(parallax);
+    var init_parallax = M.Parallax.init(parallax);
 });
