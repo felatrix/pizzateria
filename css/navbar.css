@@ -57,3 +57,17 @@ body {
 .ourclients img{
     width: 150px;    
 }
+
+.card-panel {
+    background-color: #ff5722;
+}
+
+.card-panel i {
+    color: aliceblue;
+    text-shadow: 0px 0px 2px black;
+}
+
+.card-panel span {
+    color: aliceblue;
+    text-shadow: 0px 0px 2px black;
+}
