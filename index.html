@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+        <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <!-- load css -->
+      <link rel="stylesheet" href="./css/navbar.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>PizzaTeria</title>
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <div class="navbar-fixed ">
+            <nav class="deep-orange">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo">
+                            <img src="./img/pizza-icon.png" alt="">
+                        </a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Product</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+          </div>
+          <!-- sidenav -->
+          <ul class="sidenav " id="mobile-demo">
+                <li><a href="#"><span>About Us</span></a></li>
+                <li><a href="#"><span>Clients</span> </a></li>
+                <li><a href="#"><span>Services</span> </a></li>
+                <li><a href="#"><span>Product</span> </a></li>
+                <li><a href="#"><span>Contact</span> </a></li>
+        </ul>
+
+        <!-- slider -->
+        <div class="slider">
+                <ul class="slides">
+                  <li>
+                    <img src="./img/slider/1.jpg"> <!-- random image -->
+                    <div class="caption right-align kanan" id="caption">
+                      <h3>"There’s no better </h3>
+                      <h5 class="light grey-text text-lighten-3">feeling in the world than a warm pizza box on your lap."
+                            <br>-Kevin James</h5>
+                    </div>
+                  </li>
+                  <li>
+                        <img src="./img/slider/2.jpg"> <!-- random image -->
+                        <div class="caption right-align kanan" id="caption">
+                          <h3>"I’m a huge pasta <br> and <br> pizza lover.</h3>
+                          <h5 class="light grey-text text-lighten-3">I can eat those every single day."
+                               <br> -Shay Mitchell</h5>
+                        </div>
+                  </li>
+                  <li>
+                        <img src="./img/slider/3.png"> <!-- random image -->
+                        <div class="caption center-align" id="caption">
+                          <h3>"The perfect lover</h3>
+                          <h5 class="light grey-text text-lighten-3">is one who turns into a pizza at 4:00 a.m."
+                               <br> -Charles Pierce</h5>
+                        </div>
+                  </li>
+                </ul>
+        </div>
+        <!-- section -->
+        <section id="about_us">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m4 offset-m2 about">
+                        <h4>About Us</h4>
+                        <p>Just hearing the word "Pizzaa brings a smile to the face of just about every American. Whatever style or variety -- from thick, Chicago-style deep-dish pizza stuffed with gobs of cheese, sausage, and pepperoni to a thin-as-a-cracker crust topped with veggies -- pizza invariably makes it to the top of "favorite food" lists.</p>
+                    </div>
+                    <div class="col s12 m4 about">
+                        <img class="materialboxed" width="250" src="img/store.jpg">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- clients -->
+        <section id="clients">
+            <div class="parallax-container">
+                <div class="parallax">
+                <img src="img/clients/background.jpg">
+                </div>
+                <div class="container ourclients">
+                    <h4 class="center light white-text">Our Clients</h4>
+                    <div class="row ">
+                        <div class="valign-wrapper">
+                            <div class="col m4 center ">
+                                <img src="./img/clients/icon1.png" alt="">
+                            </div>
+                            <div class="col m4 center">
+                                <img src="./img/clients/icon2.png" alt="">
+                            </div>
+                            <div class="col m4 center">
+                                <img src="./img/clients/icon3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+      <!--JavaScript at end of body for optimized loading-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var sidenav = document.querySelectorAll('.sidenav');
+                var instances = M.Sidenav.init(sidenav,{edge:'left',draggable:true});
+                
+                var slider = document.querySelectorAll('.slider');
+                var init_slider = M.Slider.init(slider,{
+                    height:400,
+                    indicators:false,
+                    interval:4000
+                });
+
+                var parallax = document.querySelectorAll('.parallax');
+                var instances = M.Parallax.init(parallax);
+            });
+        </script>
+    </body>
+  </html>
+        
